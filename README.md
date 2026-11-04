@@ -1,35 +1,56 @@
-# AstroZen - Personal Portfolio Website
+# Washington Kamadi — Personal Portfolio
 
-AstroZen is a minimalist, accessible and responsive portfolio template for your personal portfolio website. It is built with Astro and TailwindCSS.
+Personal portfolio site of **Washington Kigani Kamadi** — Mechatronics and Robotics
+engineer, PhD researcher in Space Science and Technology at the University of Trento.
 
-![zen-og](https://github.com/user-attachments/assets/7a72aaae-6652-4cd0-becc-8e6a3c224993)
+- **LinkedIn:** https://www.linkedin.com/in/WashingtonKK
+- **GitHub:** https://github.com/WashingtonKK
+- **ORCID:** https://orcid.org/0000-0003-2135-0125
 
-> [!NOTE]
-> The information contained in this template, including names, images, and content, is entirely fictitious and is intended solely to give the design a realistic appearance. Any coincidence with real-life people, events, or situations is purely coincidental. It is recommended that you replace this information with your own information.
+Built with [Astro](https://astro.build) and [TailwindCSS](https://tailwindcss.com),
+based on the [AstroZen](https://github.com/immois/astro-zen) template by Moisés Machuca.
 
-## 🔥 Features
+## Editing the content
 
-- [x] Minimalist design. clean and simple
-- [x] Mobile-first responsive layout
-- [x] SEO-friendly and accessible
-- [x] Easy to customize with a single configuration file
+Nearly everything on the page comes from a single file: **`src/config/index.ts`**.
 
-## ✅ Lighthouse Score
+- `SITE_CONFIG` — page title, meta description, nav links, social links, OG image
+- `SITE_CONTENT.hero` — name, specialty, summary, and the "Get in Touch" button target
+- `SITE_CONTENT.experience` — education and research entries
+- `SITE_CONTENT.projects` — featured projects (screenshot, summary, source and preview links)
+- `SITE_CONTENT.about` — the About Me text and photo
 
-![performance](https://github.com/user-attachments/assets/4f95e2ca-03f9-4996-9e34-dcd179194c58)
+Images live in `public/`:
 
-## 🚀 Getting Started
+| File                   | Used for                      |
+| :--------------------- | :---------------------------- |
+| `washington-small.jpg` | Header avatar (160×160)       |
+| `washington-big.jpg`   | About Me photo (800×800)      |
+| `washington-og.png`    | Social share card (1200×630)  |
+| `project-*.png`        | Project screenshots (736×483) |
+| `favicon.svg`          | WK monogram favicon           |
 
-Clone this repository to your local machine using Git.
+> Project screenshots are sized 736×483 on purpose — the card crops them from the
+> top-left at natural size, so images much larger than this will appear zoomed in.
 
-```scheme
-git clone https://github.com/immois/astro-zen.git
-cd astro-zen
+## Commands
+
+| Command        | Action                                      |
+| :------------- | :------------------------------------------ |
+| `pnpm install` | Installs dependencies                       |
+| `pnpm dev`     | Starts local dev server at `localhost:4321` |
+| `pnpm build`   | Type-checks and builds to `./dist/`         |
+| `pnpm preview` | Preview the build locally                   |
+
+## Deployment
+
+Deployed on Vercel as a static Astro site.
+
+```sh
+vercel deploy --prod
 ```
 
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `pnpm install` | Installs dependencies                        |
-| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm build`   | Build your production site to `./dist/`      |
-| `pnpm preview` | Preview your build locally, before deploying |
+## License
+
+Template licensed under MIT — see [LICENSE](LICENSE). Photographs and personal
+content are © Washington Kigani Kamadi.

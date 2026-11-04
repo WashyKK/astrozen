@@ -1,98 +1,97 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Washington Kamadi — Mechatronics & Robotics Engineer",
+  author: "Washington Kigani Kamadi",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Mechatronics and Robotics engineer from Kenya, now a PhD researcher in Space Science and Technology at the University of Trento. I work on climate-smart robotics, privacy-preserving AI platforms and IoT systems.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/washington-small.jpg",
   navLinks: [
-    { text: "Experience", href: "#experience" },
+    { text: "Education", href: "#education" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/WashingtonKK" },
+    { text: "Github", href: "https://github.com/WashingtonKK" },
+    { text: "ORCID", href: "https://orcid.org/0000-0003-2135-0125" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/washington-og.png",
+  canonicalURL: "https://washingtonkamadi.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Washington Kamadi",
+    specialty: "Mechatronics & Robotics Engineer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Mechatronics and Robotics engineer from Kenya, now a PhD researcher in Space Science and Technology at the University of Trento. I work on climate-smart robotics, privacy-preserving AI platforms and IoT systems.",
+    contactLabel: "Get in Touch",
+    contactHref: "https://www.linkedin.com/in/WashingtonKK",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "University of Trento",
+      position: "PhD Student — Space Science and Technology",
+      startDate: "Nov 2026",
+      endDate: "Present",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Doctoral researcher in the Department of Physics, on the Space Science and Technology doctoral programme in Trento, Italy.",
+        "Working on climate-smart robotics, privacy-preserving AI platforms and IoT systems.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
-      summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
-      ],
-    },
-    {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
+      company:
+        "Pan African University Institute for Basic Sciences, Technology and Innovation",
+      position: "MSc, Mechatronic Engineering",
+      startDate: "Jul 2024",
+      endDate: "Aug 2026",
       summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+        "Department of Mechanical and Mechatronic Engineering, Nairobi, Kenya.",
+    },
+    {
+      company: "Jomo Kenyatta University of Agriculture and Technology",
+      position: "Mechatronic Engineering",
+      startDate: "Sep 2017",
+      endDate: "Dec 2022",
+      summary: "Department of Mechatronics, Juja, Kenya.",
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "Magistrala",
+      summary:
+        "Open-source IoT platform framework for connecting and managing devices over MQTT, CoAP, HTTP and WebSocket. I contribute to the Go codebase at Abstract Machines.",
+      linkPreview: "https://www.absmach.eu/products/magistrala/",
+      linkSource: "https://github.com/absmach/magistrala",
+      image: "/project-magistrala.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "Cocos AI",
+      summary:
+        "Confidential computing system for AI, running workloads inside trusted execution environments so models and data stay private. I contribute to the Go codebase at Ultraviolet.",
+      linkPreview: "https://www.ultraviolet.rs/products/cocos-ai/",
+      linkSource: "https://github.com/ultravioletrs/cocos",
+      image: "/project-cocos.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "Cube AI",
+      summary:
+        "LLM protection with TEEs — serving and interacting with large language models inside hardware-backed enclaves. I contribute to the Go codebase at Ultraviolet.",
+      linkPreview: "https://www.ultraviolet.rs/products/cube-ai/",
+      linkSource: "https://github.com/ultravioletrs/cube",
+      image: "/project-cube.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I'm Washington — an Advanced Mechatronics and Robotics engineer from Kenya, currently a PhD researcher in Space Science and Technology at the University of Trento. I'm passionate about robotics, IoT and confidential computing, and about what they can do for a sustainable future.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      Right now I'm working on climate-smart robotics, privacy-preserving AI platforms and IoT solutions. Alongside that I contribute to open-source infrastructure in the same space — Magistrala, an IoT platform framework, and Cocos AI and Cube AI, which bring confidential computing to AI workloads.
+
+      I work mostly in Go, Python, C/C++, MATLAB, ROS and TypeScript. Ask me about confidential computing, IoT protocols, robotics or climate change.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/washington-big.jpg",
   },
 };
-
-// #5755ff
